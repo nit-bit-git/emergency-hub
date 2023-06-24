@@ -1,0 +1,87 @@
+.navContainer {
+  background-color: #f2f2f200;
+    position: relative;
+    padding: 0px;
+    z-index: 4;
+    border-radius: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: min-content;
+    height: 40px;
+    
+  }
+  .navContainer.visible
+  {
+    opacity:1;
+    background-color: #f2f2f220;
+  }
+  
+ .navContainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    cursor: pointer;
+    
+    justify-items: center;
+    
+  }
+  
+  .navContainer li {
+    padding: 10px;
+    margin-right: 10px;
+    width: min-content;
+  }
+  
+  .navContainer li a {
+    text-decoration:none;
+    color: #c8c6c6a2;
+    padding: 15px;
+    transition: all 0.4s;
+    position: relative;
+  }
+  
+  .navContainer li a:hover,
+  nav li a:focus  {
+    
+    color: #ffffff;
+
+  }
+   .navContainer li a::after{
+     content:'';
+     height:4px;
+     width: 60px;
+     background: rgb(180, 12, 236);
+     position:absolute;
+     left: 10px;
+     opacity:0;
+     font-size: 15px;
+     transition: all 0.3s; 
+     pointer-events: none;
+   }
+   .navContainer li a:hover::after,
+   .navContainer li a:focus::after{
+    opacity:1; 
+  
+   }
+   .custom-button {
+    width: max-content;
+    height: 50px;
+    background-color: #6a0681; /* Set the background color */
+    color: #fff; /* Set the text color */
+    padding: 10px 10px 15px 10px; /* Add padding for spacing */
+    border: none; /* Remove the default button border */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    /* Additional styling as needed */
+  }
+  
+  .custom-button:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    color: #6a0681;
+  }
+  .btncontainer{
+  
+    align-items: center;
+  }
