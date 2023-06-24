@@ -146,6 +146,10 @@ function addItemsToDisaster(uint256 _id,string memory _name,uint256 _quantity) p
     disaster.items.push(item);
     return _id;
 }
+function addAdmin(address _admin) public returns(bool){
+    admin.push(_admin);
+    return true;
+}
 function updateItemsToDisaster(uint256 _id,string memory _name , uint256 _quantity) public returns(bool){
     Disaster  storage  disaster  = disasters[_id];
     for(uint i=0 ; i<disaster.items.length ; i++){
@@ -216,6 +220,7 @@ function isAdmin(address _address) public view returns(bool){
     }
     return false;
 }
+
 function updateAdminView( uint256 _id ) public returns (bool) {
     //require(msg.sender == police, "Only police can update the view");
     for(uint i=0 ; i<admin.length ; i++){
@@ -251,12 +256,16 @@ function verifyVolunteer( uint256 _id , string memory _name) public view returns
     for(uint i=0 ; i<admin.length ; i++){
         if(msg.sender == admin[i]){
             Volunteer storage volunteer = volunteersList[_id];
+    for(uint i=0 ; i<volunteerCount ; i++){
+       
+            Volunteer storage volunteer = volunteersList[i];
             if(keccak256(abi.encodePacked(volunteer.id)) == keccak256(abi.encodePacked(_id)) && keccak256(abi.encodePacked(volunteer.name)) == keccak256(abi.encodePacked(_name))){
-                
+           // if(volunteer.id==_id && volunteer.name==_name){    
                 return true;
             }
           
         }
+        
     }
     return false;
 }
