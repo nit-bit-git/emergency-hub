@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  
+  
+}
+.bg{
+  height: 100%;
+  width:100%;
+  background-image: url("./assets/loadingbg.svg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+.c1 {
+  display: grid;
+  
+  grid-gap: 10px;
+  position: relative;
+   
+    justify-content: center;
+    align-content: center;
+}  
+.child {
+    display: grid;
+   
+    justify-content: center;
+    align-content: center;
+}
+.Blocktopus {
+    
+    z-index: 1;
+}
+@keyframes rotate {
+    from {
+      transform: rotate3d(0, 0, 0, 60deg); 
+    }
+    to {
+      transform: rotate3d(0, 100, 0, 360deg); 
+    }
+  }
+  
+  
+
+  .wordentry {
+    display: flex;
+    
+    justify-content:center;
+    align-items: center;
+     padding: 5%;
+    
+     z-index: 2;
+    height: fit-content;
+    position: relative;
+    top:35%;
+   
+  }
+  
+ /* Hide the scrollbar */
+::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
