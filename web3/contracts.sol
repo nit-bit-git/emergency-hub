@@ -253,9 +253,7 @@ function upvotePost( uint256 _id ) public payable returns (bool) {
     
 }
 function verifyVolunteer( uint256 _id , string memory _name) public view returns (bool) {
-    for(uint i=0 ; i<admin.length ; i++){
-        if(msg.sender == admin[i]){
-            Volunteer storage volunteer = volunteersList[_id];
+
     for(uint i=0 ; i<volunteerCount ; i++){
        
             Volunteer storage volunteer = volunteersList[i];
@@ -265,8 +263,11 @@ function verifyVolunteer( uint256 _id , string memory _name) public view returns
             }
           
         }
-        
+          return false;
     }
-    return false;
-}
+    
+        
+    
+  
+
 }
