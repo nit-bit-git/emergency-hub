@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './newsfeed.css';
 import bhuj from '../styles/assets/data/bhuj.svg';
 import {  useNavigate } from 'react-router-dom';
+import Sidebar from "../SideBar";
+import Navbar from "../Navbar/navbar"
+import boLogo from "../styles/assets/logo.svg";
+import Rise from "../styles/assets/Rise.svg"
+
 const Newsfeed = () =>
 {
     
@@ -64,5 +69,5 @@ const Newsfeed = () =>
       </div>
     );
   }
-       
-export default Newsfeed;
+
+  export default Newsfeed;
