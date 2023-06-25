@@ -6,6 +6,7 @@ import Sidebar from "./SideBar";
 import Navbar from "./Navbar/navbar"
 import boLogo from "./styles/assets/logo.svg";
 import Rise from "./styles/assets/Rise.svg"
+import sBar from "./searchbar";
 export default function Home() {
   return (
 
@@ -18,6 +19,7 @@ export default function Home() {
         </div>
         <div className="Rise">
           <img src={Rise}></img>
+          <sBar/>
         </div>
        <div className="nBar">
         < Navbar />
@@ -33,12 +35,10 @@ export default function Home() {
         <Newsfeed />
         </div>
         </div>
-       
-     
-       
-
-        
-     
+        <div className="footer">
+          <hi>footer</hi>
+          </div> 
     </div>
+   
   );
 }
