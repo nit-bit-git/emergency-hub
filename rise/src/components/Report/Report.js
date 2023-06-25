@@ -1,7 +1,13 @@
 import React from 'react';
+import { ConnectWallet } from "@thirdweb-dev/react";
+import "../styles/home.css";
 import { useNavigate } from 'react-router-dom';
+import Sidebar from "../SideBar";
+import Navbar from "../Navbar/navbar"
+import boLogo from "../styles/assets/logo.svg";
+import Rise from "../styles/assets/Rise.svg"
 
-function Report() {
+const Report= () => {
     const navigate = useNavigate();
   return (
     <div style={{ minHeight: '600px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2%' }}>
@@ -106,4 +112,39 @@ function Report() {
   );
 }
 
-export default Report;
+export default function RepHome() {
+  return (
+
+    
+    <div className="hcontainer">
+      
+       <div className="hHeader">
+        <div className="boLogo">
+          <img src={boLogo}></img>
+        </div>
+        <div className="Rise">
+          <img src={Rise}></img>
+        </div>
+       <div className="nBar">
+        < Navbar />
+       </div>
+       </div>
+       <div className="con2">
+      
+        
+        <div className="sidebar">
+        <Sidebar/>
+        </div>
+        <div className="Newsfeed">
+        <Report />
+        </div>
+        </div>
+       
+     
+       
+
+        
+     
+    </div>
+  );
+}
