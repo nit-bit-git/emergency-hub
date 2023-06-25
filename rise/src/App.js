@@ -2,7 +2,7 @@ import React from 'react';
 import Landing from './components/landing'
 import Splash from './components/Splash'
 import Home from './components/home'
-import Report from './components/Report/Report'
+import Description from './components/Newsfeed/desc'
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Route exact path="/" element={< Splash/>} />
       <Route path="/landing"  element={<Landing />} />
       <Route path="/home"  element={<Home />} />
-      <Route path="/Report/Report"  element={<Report />} />
+      <Route path="/home/desc"  element={<Description />} />
       
       {/* Add more routes as needed */}
     </Routes>

@@ -23,7 +23,7 @@ const Newsfeed = () =>
         const navigate = useNavigate();
 
         const handleClick = () => {
-            navigate('../Report/Report')
+            navigate('./desc')
             // Perform additional actions or update component state here
           };
 
@@ -42,21 +42,21 @@ const Newsfeed = () =>
         <div className='news' onClick={handleClick}>
             <img src={bhuj} alt='bhuj-earthquake'></img>
             <div className='content'>
-         <h3>Catastrophic Earthquake Strikes Bhuj</h3>
+         <h1>Catastrophic Earthquake Strikes Bhuj</h1>
             <p>Immediate assistance needed</p>
             </div>
           </div>
           <div className='news' onClick={handleClick}>
             <img src={bhuj} alt='bhuj-earthquake'></img>
             <div className='content'>
-         <h3>Catastrophic Earthquake Strikes Bhuj</h3>
+         <h1>Catastrophic Earthquake Strikes Bhuj</h1>
             <p>Immediate assistance needed</p>
             </div>
           </div>
           <div className='news' onClick={handleClick}>
             <img src={bhuj} alt='bhuj-earthquake'></img>
             <div className='content' >
-         <h3>Catastrophic Earthquake Strikes Bhuj</h3>
+         <h1>Catastrophic Earthquake Strikes Bhuj</h1>
             <p>Immediate assistance needed</p>
             </div>
           </div>
