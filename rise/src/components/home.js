@@ -10,7 +10,7 @@ export default function Home() {
   return (
 
     <body>
-    <div className="hcontainer">
+    <div className="hcontainer" style={{overflow:"hidden"}}>
       
        <div className="hHeader">
         <div className="boLogo">
