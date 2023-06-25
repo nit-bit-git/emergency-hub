@@ -9,7 +9,7 @@ import Rise from "./styles/assets/Rise.svg"
 export default function Home() {
   return (
 
-    
+    <body>
     <div className="hcontainer">
       
        <div className="hHeader">
@@ -34,11 +34,13 @@ export default function Home() {
         </div>
         </div>
        
-     
        
-
-        
-     
     </div>
+    <div className='foot' style={{position:'absolute'}}>
+          <h1 style={{color:'black'}}>
+             <u>footer</u>
+            </h1>
+        </div> 
+    </body>
   );
 }

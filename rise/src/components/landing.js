@@ -1,11 +1,12 @@
 import Block from './styles/assets/block.svg';
 import Topus from './styles/assets/topus.svg'
 import Logo from './styles/assets/logo.svg'
-import Vortex from './styles/assets/vortex.svg'
 import Octo from './styles/assets/Blocktopus.svg'
 import './styles/landing.css';
+import React, { useState, useEffect, useRef } from 'react';
 import { easeInOut, motion } from "framer-motion";
-import React, { useState, useEffect } from 'react';
+
+import design from './styles/assets/design.svg'
 import Rise from './styles/assets/Rise.svg'
 import Navbar from './Navbar/navbar'
 import Resilience from './styles/assets/resilience.svg'
@@ -15,7 +16,7 @@ import Support from './styles/assets/support for emergencies.svg'
 const TranslatedDiv = () => {
   return (
     <motion.div
-      initial={{x:"80%",y:"70%"}}
+      initial={{x:"0%",y:"90%"}}
       animate={{ x:"-20%", y:"-35%", scale:0.4 }} // Target position
       transition={{ duration: 1 }} // Transition duration
       style={{
@@ -55,18 +56,21 @@ function Landing()
     }, 700)
     return () => clearTimeout(delay);
   }, []);
+
+  const aboutUsSectionRef = useRef(null);
+
     return (
       <body style={{backgroundColor:'black'}}>
       <body className='body'>
-         
-        <div className='outC'>
        
+        <div className='outC'>
+        
           <div className='container'>
           
           <TranslatedDiv />
           
           <div className={`navbox ${isVisible ? 'visible' : ''}`} >
-           <Navbar />
+           <Navbar aboutUsSectionId='aboutus' />
            </div>
            <div className={`bgk ${isVisible ? 'visible' : ''}`}>
             <div style={{ position: 'relative', top: '10%' }}>
@@ -81,7 +85,9 @@ function Landing()
            <img src={Support}/>
            </div>
           </div>
+         
           </div>
+         
           </div>
           </div> 
           <div className={`D1 ${isVisible ? 'visible' : ''}` }>
@@ -97,17 +103,28 @@ function Landing()
         repeatType: 'reverse' }}
         style={{
           height:'max-content',
-          padding:'20px',
+          
         }} // Animation duration
         >
           { isVisibleOc && < img src ={Octo} className="Octo" alt="Octo"></img>}
         </motion.div>
             </div>
+            <div id='aboutus' ref={aboutUsSectionRef} className='aboutus'>
+            <h1>
+              About Us
+            </h1>
+            
+            <p>
+              We at Blocktopus aim at ...
+            </p>
+            </div>
            </div>
           <div className={`D2 ${isVisible ? 'visible' : ''}`} />
           </body>     
           <div className='footer'>
-          
+          <h1>
+             <u>Meet the Team</u>
+            </h1>
         </div> 
         </body>
     )

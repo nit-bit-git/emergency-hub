@@ -5,6 +5,7 @@ import Home from './components/home'
 import News from './components/Newsfeed/newsfeed';
 import Repo from './components/Report/Report';
 import Vol from './components/volunteering/form';
+import Volver from './components/volunteering/formVer'
 import Description from './components/Newsfeed/desc'
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
@@ -19,6 +20,8 @@ function App() {
       <Route path="/Newsfeed/newsfeed"  element={<News/>} />
       <Route path="/Report/Report"  element={<Repo/>} />
       <Route path="/volunteering/form"  element={<Vol/>} />
+      
+      <Route path="/volunteering/formVer"  element={<Volver/>} />
       {/* Add more routes as needed */}
     </Routes>
   </BrowserRouter>

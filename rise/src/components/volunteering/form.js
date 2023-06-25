@@ -7,7 +7,8 @@ import "../styles/home.css";
 const Form= () => {
 
   return (
-    <div style={{ minHeight: '600px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' , padding: '2%'}}>
+    <div style={{ top:'30%',maxHeight: '500px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' , padding: '2%',position: 'relative'}}>
+     
       <h1 style={{ fontSize: '3rem' }}>Volunteer Registration</h1>
       <form style={{ maxWidth: '400px', width: '100%' }}>
         <div style={{ marginBottom: '1rem' }}>
@@ -189,7 +190,8 @@ const Form= () => {
 
   function FormPage() {
     return (
-      <div className="hcontainer">
+      <body style={{height:'180vh'}}>
+      <div className="hcontainer"style={{height:'170vh'}} >
         
          <div className="hHeader">
           <div className="boLogo">
@@ -202,23 +204,29 @@ const Form= () => {
           < Navbar />
          </div>
          </div>
-         <div className="con2">
+         <div className="con2" style={{top:'15%'}}>
         
           
           <div className="sidebar">
+          
           <Sidebar/>
           </div>
-          <div className="Newsfeed">
+         
           <Form />
-          </div>
-          </div>
-         
-       
-         
-  
           
+          </div>
+        
        
       </div>
+      
+        
+        <div className='foot'>
+        <h1 style={{color:'black'}}>
+           <u>footer</u>
+          </h1>
+          </div> 
+      </body>
+          
     );
   }
 

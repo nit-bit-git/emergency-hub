@@ -2,32 +2,36 @@
     display:flex;
     flex-direction:row;
     background-color: rgba(97, 99, 99, 0.436);
-    border: 1px solid black;
-    border-radius: 40px;
+    border: 1px solid rgb(104, 95, 95);
+    border-radius: 20px;
     margin-bottom: 0.2rem;
+   overflow-y: scroll;
+    height: 20vh;
+    align-items: first start;
+    cursor: pointer;
 }
 .content
 {
     padding-left:5px;
     width:max-content;
-    height: fit-content;
+    height: 10%;
 }
 
 .feed {
-    padding: 2px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: left; 
+    overflow-y: scroll;
 }
 .feed img {
-   
-    padding:5px
+   padding: 10px;
+   max-height: 90%;
 }
 .feed h1 {
-   
-    padding-top:10px;
+  
 }
 .feed p {
     padding-left: 2px;
-    font-size: large;
+    
 }

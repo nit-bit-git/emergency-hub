@@ -60,6 +60,31 @@ const Newsfeed = () =>
             <p>Immediate assistance needed</p>
             </div>
           </div>
+          <div className='news' onClick={handleClick}>
+            <img src={bhuj} alt='bhuj-earthquake'></img>
+            <div className='content'>
+         <h1>Catastrophic Earthquake Strikes Bhuj</h1>
+            <p>Immediate assistance needed</p>
+            </div>
+          </div> <div className='news' onClick={handleClick}>
+            <img src={bhuj} alt='bhuj-earthquake'></img>
+            <div className='content'>
+         <h1>Catastrophic Earthquake Strikes Bhuj</h1>
+            <p>Immediate assistance needed</p>
+            </div>
+          </div> <div className='news' onClick={handleClick}>
+            <img src={bhuj} alt='bhuj-earthquake'></img>
+            <div className='content'>
+         <h1>Catastrophic Earthquake Strikes Bhuj</h1>
+            <p>Immediate assistance needed</p>
+            </div>
+          </div> <div className='news' onClick={handleClick}>
+            <img src={bhuj} alt='bhuj-earthquake'></img>
+            <div className='content'>
+         <h1>Catastrophic Earthquake Strikes Bhuj</h1>
+            <p>Immediate assistance needed</p>
+            </div>
+          </div>
           </div>
       </div>
     );
