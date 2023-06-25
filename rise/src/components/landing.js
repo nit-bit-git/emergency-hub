@@ -82,8 +82,16 @@ function Landing()
            </div>
           </div>
           </div>
+          
+            
           </div>
+          
+          <div>
+          
+          </div>
+          
           </div> 
+          <h3>Introducing our blockchain-powered solution for enhancing community resilience and coordination during emergencies. Our platform enables efficient resource allocation and seamless information sharing, fostering a united response in times of crisis. Join us in building a stronger and more connected community.</h3>
           <div className={`D1 ${isVisible ? 'visible' : ''}` }>
           <div className='vortex'>
           <motion.div
@@ -104,6 +112,7 @@ function Landing()
         </motion.div>
             </div>
            </div>
+          
           <div className={`D2 ${isVisible ? 'visible' : ''}`} />
           </body>     
           <div className='footer'>

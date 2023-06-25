@@ -29,6 +29,11 @@
         
         
 }
+
+.h3{
+  padding: 40px;
+  margin-top: 50px;
+}
 .navbox{
   height: 10%;
   display: flex;
