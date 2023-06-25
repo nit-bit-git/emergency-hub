@@ -1,8 +1,7 @@
 import React from 'react';
 import { FiSearch, FiArrowRight } from 'react-icons/fi';
-import './SearchBar.css';
 
-const SearchBar = () => {
+function SearchBar ()  {
   return (
     <div className="search-bar">
       <input type="text" placeholder="Search" />
