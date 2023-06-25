@@ -3,7 +3,8 @@
     flex-direction:row;
     background-color: rgba(97, 99, 99, 0.436);
     border: 1px solid black;
-    border-color:aliceblue;
+    border-radius: 40px;
+    margin-bottom: 0.2rem;
 }
 .content
 {

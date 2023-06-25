@@ -4,7 +4,7 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 0.5fr 2fr;
         
         position: relative;
         flex-wrap: wrap;
@@ -13,16 +13,26 @@
 }
 .hHeader {
    margin:50px;
-   grid-row-start:1 ;
+   grid-row-start:1 ; ;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    position:absolute;
    width:100%;
-   height:min-content;
+
    align-items: baseline;
+   justify-content: center;
   
   
 }
+.boLogo{
+   height: 100%;
+   
+}
+.boLogo img {
+   height: 40%;
+}
+
+
 .con2 {
    
    grid-row-start:2 ;
@@ -30,8 +40,7 @@
    grid-column-end:4;
    display:grid;
    grid-template-columns: 0.5fr 3fr;
-   position:relative;
-  
+   position:relative;   
    width:95%;
    height:min-content;
    align-items:first baseline;
@@ -39,8 +48,12 @@
 }
 .Rise {
    position:relative;
-  
+   height:100%;
+   width:100%;
    grid-column-start:2;
+}
+.Rise img {
+   height:40%;
 }
 .nBar{
    position:relative;
