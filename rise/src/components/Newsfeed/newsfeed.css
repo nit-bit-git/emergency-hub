@@ -1,23 +1,33 @@
 .news{
     display:flex;
     flex-direction:row;
+    background-color: rgba(97, 99, 99, 0.436);
     border: 1px solid black;
-    border-color:aliceblue;
+    border-radius: 40px;
+    margin-bottom: 0.2rem;
 }
 .content
 {
-    padding-left:5%;
+    padding-left:5px;
     width:max-content;
     height: fit-content;
 }
 
 .feed {
-    padding: 5%;
+    padding: 2px;
     display: flex;
     flex-direction: column;
-     ;
+    text-align: left; 
 }
 .feed img {
    
-    padding:5%
+    padding:5px
+}
+.feed h1 {
+   
+    padding-top:10px;
+}
+.feed p {
+    padding-left: 2px;
+    font-size: large;
 }

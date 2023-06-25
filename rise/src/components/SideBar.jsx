@@ -1,44 +1,35 @@
-import { useState } from "react";
-import { FiMenu } from "react-icons/fi";
-import { BiLogOut } from "react-icons/bi";
-import { links } from "./SideBarData";
-import Logo from "./styles/assets/logo.svg";
-import './styles/SideBar.css';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FiSettings, FiUsers, FiAlertOctagon, FiMenu } from 'react-icons/fi';
 
-export default function Sidebar() {
-  const [activeBar, setActiveBar] = useState(false);
+function Nav() {
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleItemClick = (item) => {
+    setIsOpen(!isOpen);
+    // Perform specific actions based on the clicked item
+    console.log(`Clicked ${item}`);
+  };
 
   return (
-    <aside className={`sidebar ${activeBar && "active"}`}>
-      <header className="header">
-       
-        <button
-          className="toggle-sidebar-btn"
-          onClick={() => setActiveBar(!activeBar)}
-        >
-          <FiMenu />
-        </button>
-      </header>
-
-      <ul className="list-items">
-        {links.map(({ title, icon, link }, index) => (
-          <li key={index} className="item">
-            <a className="link" href={link}>
-              <figure className="link-icon">{icon}</figure>
-              <span className="link-name">{title}</span>
-            </a>
-            <span className="tooltip">{title}</span>
-          </li>
-        ))}
+    <div className="side-navbar">
+      <ul>
+        <li onClick={() => navigate('/Newsfeed/newsfeed')}>
+          <FiSettings />
+          Newsfeed
+        </li>
+        <li onClick={() => navigate('/Report/Report')}>
+          <FiUsers />
+          Report
+        </li>
+        <li onClick={() => navigate('/volunteering/form')}>
+          <FiAlertOctagon />
+          Volunteering
+        </li>
       </ul>
-
-      <button className="logout-btn">
-        
-        <div className="user-name-wrapper">
-          <span className="user-name">Blocktopus</span>
-          <BiLogOut />
-        </div>
-      </button>
-    </aside>
+    </div>
   );
 }
+
+export default Nav;
