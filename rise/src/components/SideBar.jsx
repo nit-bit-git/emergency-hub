@@ -5,6 +5,11 @@ import {
   FiAlertOctagon,
   FiMenu
 } from "react-icons/fi";
+function Nav()
+{
+  const[isOpen, setIsOpen]=useState(false);
+  
+}
 const handleItemClick = (item) => {
   setIsOpen(!isOpen);
 };
