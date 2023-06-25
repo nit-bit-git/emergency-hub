@@ -9,6 +9,7 @@ const handleItemClick = (item) => {
   setIsOpen(!isOpen);
 };
 
+
 class SideNavbar extends React.Component {
   render() {
     return (
