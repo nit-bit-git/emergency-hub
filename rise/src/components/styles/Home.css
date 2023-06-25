@@ -84,7 +84,7 @@ body{
    position: relative;
    grid-column-start:2;
    width:100%;
-   overflow: hidden;
+   overflow: auto;
   
 }
 .foot {
